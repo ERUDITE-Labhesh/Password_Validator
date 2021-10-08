@@ -1,3 +1,11 @@
+# THIS IS THE SOURCE CODE FOR PASSWORD VALIDATOR
+# THE PASSWORD VALIDATORS ARE RESPONSIBLE FOR DETERMINING WHETHER A PROPOSED PASSWORD IS ACCEPTABLE FOR USE AND COULD INCLUDE CHECKS
+
+# IMPORTED CSV HEADER FILE
+import csv
+# THE PATH OF CSV FILE WHERE COOMON PASSWORD IS SAVED
+csv_file_path = csv_file_path = r"C:\Users\Labhesh\Desktop\Python\Common_password.csv"
+
 # THIS FUNCTION CONTAINS INSTRUCTIONS TO DISPLAY FOR PASSWORD VALIDATOR
 def instructions():
     print("WELCOME TO PASSWORD VALIDATOR")
@@ -88,7 +96,16 @@ def password_validator_main(user_name, user_pass):
                                         print("PASSWORD INVALID, PASSWORD CONTAINS MORE THAN 3 SAME SPECIAL CHARACTER CONSECUTIVELY ")
                                         user_newpass = get_password()
                                         password_validator_main(user_name, user_newpass)
+                                    else:
+                                        print("PASSWORD PASSED")
+                                        return_checkcommon = check_csv(user_pass, csv_file_path)
 
+                                        if return_checkcommon is True:
+                                            print("PASSWORD INVALID, PASSWORD IS MOST COMMON")
+                                            user_newpass = get_password()
+                                            password_validator_main(user_name, user_newpass)
+                                        else:
+                                            print("PASSWORD VALIDATED, THE GIVEN PASSWORD STATISFY ALL ABOVE CONDITION")
 
 # TO CHECK THE LENGTH OF PASSWORD
 def check_length(user_pass):
@@ -205,11 +222,19 @@ def check_username(user_name,user_pass):
     else:
         return True
 
-# TO CHECK WHEATHER THE PASSWORD IS COMMON
-def check_csv(user_name):
-    pass
+# TO CHECK WHEATHER THE GIVEN PASSWORD IS GLOBALLY COMMON
+def check_csv(user_pass, csv_file_path):
+    with open(csv_file_path, 'r') as file:
+        FOUND = False
+        reader = csv.reader(file)
 
-
+        for password in reader:
+            if password[0] == user_pass:
+                FOUND = True
+                break
+            else:
+                continue
+    return FOUND
 
 def get_password():
     print("---------------------------------------------------------------------")
