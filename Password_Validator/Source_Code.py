@@ -24,9 +24,9 @@ INSTRUCTIONS-----------------------------\n")
 CHARACTER - !, @, #, $, %, ^, &, *, (, ), _, -, ~ ")
     print("7: PASSWORD SHOULD START WITH EITHER ANY SPECIAL\
 CHARACTER OR WITH 2 DIGIT'S NUMBER")
-    print("8: PASSWORD SHOULD MUST CONTAIN ATLEAST\
+    print("8: PASSWORD SHOULD CONTAIN ATLEAST\
 3 UPPER-CASE CHARACTER AND 3 LOWER-CASE CHARACTER")
-    print("9: PASSWORD SHOULD MUST CONTAIN ATLEAST\
+    print("9: PASSWORD SHOULD CONTAIN ATLEAST\
 3 SPECIAL CHARACTER")
     print("10: PASSWORD SHOULD NOT CONTAIN 5 SAME\
 CHARACTER\ OR NUMBER CONSECUTIVELY ")
@@ -103,7 +103,7 @@ HAVE USERNAME INTO IT AT ANY POSITION")
                                 password_validator_main(user_name, user_newpass)
                             else:
                                 print(" THE PASSWORD PASSED AS IT DOES'NT\
-INCLUDE USERNAME IN IT ")
+ INCLUDE USERNAME IN IT ")
                                 return_checkconsi = check_consi(user_pass)
 
                                 if return_checkconsi is False:
@@ -112,17 +112,17 @@ MORE THAN 5 SAME CHARACTER OR NUMBER CONSECUTIVELY ")
                                     user_newpass = get_password()
                                     password_validator_main(user_name, user_newpass)
                                 else:
-                                    print(" THE PASSWORD PASSED AS IT DOES'NT\
+                                    print(" THE PASSWORD PASSED AS IT DOES'NT \
 INCLUDE CONSECUTIVELY SPECIAL CHARACTER IN IT")
                                     return_checkconsi_special = check_consi_special(user_pass)
 
                                     if return_checkconsi_special is False:
-                                        print("PASSWORD INVALID, PASSWORD CONTAINS\
+                                        print("PASSWORD INVALID, PASSWORD CONTAINS \
 MORE THAN 3 SAME SPECIAL CHARACTER CONSECUTIVELY ")
                                         user_newpass = get_password()
                                         password_validator_main(user_name, user_newpass)
                                     else:
-                                        print(" THE PASSWORD PASSED AS IT DOES'NT HAVE USERNAME\
+                                        print(" THE PASSWORD PASSED AS IT DOES'NT HAVE USERNAME \
 INTO PASSWORD AT ANY POSITION")
                                         return_checkcommon = check_csv(user_pass, csv_file_path)
 
@@ -297,13 +297,15 @@ def get_username():
     return user_name
 
 
-print("---------------------------------------------------------------------")
-user_input = input("DO YOU WANT TO USE PASSWORD VALIDATOR (Y/N) : \n>>")
-if user_input.upper() == "Y":
-    user_name = get_username()
-    user_pass = get_password()
-    password_validator_main(user_name, user_pass)
-elif user_input.upper() == "N":
-    print("THANK YOU !!! ")
-else:
-    print("INVALID INPUT, PLEASE CHOOSE Y OR N TO USE PASSWORD VALIDATOR")
+# DRIVER'S CODE
+if __name__ == "__main__":
+    print("---------------------------------------------------------------------")
+    user_input = input("DO YOU WANT TO USE PASSWORD VALIDATOR (Y/N) : \n>>")
+    if user_input.upper() == "Y":
+        user_name = get_username()
+        user_pass = get_password()
+        password_validator_main(user_name, user_pass)
+    elif user_input.upper() == "N":
+        print("THANK YOU !!! ")
+    else:
+        print("INVALID INPUT, PLEASE CHOOSE Y OR N TO USE PASSWORD VALIDATOR")
