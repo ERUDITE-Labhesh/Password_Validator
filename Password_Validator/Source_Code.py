@@ -312,3 +312,9 @@ if __name__ == "__main__":
 
     def function_1(num1, num2): # Labhesh's New Task 
         return num1+num2 
+    
+      def function_2(num1, num2): # Alexs New Task 
+        return num1+num2 
+    
+    
+    
