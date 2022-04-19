@@ -309,3 +309,6 @@ if __name__ == "__main__":
         print("THANK YOU !!! ")
     else:
         print("INVALID INPUT, PLEASE CHOOSE Y OR N TO USE PASSWORD VALIDATOR")
+
+    def function_1(num1, num2): # Labhesh's New Task 
+        return num1+num2 
