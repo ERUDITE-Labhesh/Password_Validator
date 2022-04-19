@@ -8,10 +8,10 @@ To Run the Source Code of Password Validator you would need Python3 Installed on
 
 ## INSTALLATION OF PYTHON 3:
 
-STEP 1 : Visit the link [Python Link] (https://www.python.org/downloads) and Select the Version above 
+STEP 1 : Visit the link [Python Link] (https://www.python.org/downloads) and Select the Version above
          Python 3.0 and above
 
-STEP 2 :  Download Python Executable Installer 
+STEP 2 :  Download Python Executable Installer
 
 STEP 3 : Run Executable Installer
 
@@ -80,11 +80,11 @@ The Below Scenarios are to Validate the Password
 
 ***user_pass is the Password given by user to validate.***
 
-***user_name is the Username given by user.*** 
+***user_name is the Username given by user.***
 
 ---------------------------------------------------------------------------------------------------
 ***1) instructions() :***
-This Function does not takes any formal parameters, The Functionality of instrunction() is to generally display the Instructions of Password Validator, This function consist of print Statement and does not return any value. 
+This Function does not takes any formal parameters, The Functionality of instrunction() is to generally display the Instructions of Password Validator, This function consist of print Statement and does not return any value.
 
 ***2) get_password():***
 This Function does not take any formal parameter, The Functionality of get_password() is to take the Passowrd from user using input() function in and This Function returns the user_pass the return type of user_pass is string.
@@ -96,14 +96,14 @@ This Function does not take any formal parameter, The Functionality of get_usern
 This Function take two formal parameter such as user_name, user_pass of string data-type, This Function is the main function of the password Validator, This function consist of Decision Statements i.e cluster of if and else statements in it  to call other function according to there functionality.
 
 ***5) check_length(user_pass):***
-This Function takes one formal parameter user_password of string data-type , The Functionality of check_length() is to check the length of user's password wheather it statisfy the criteria of 
+This Function takes one formal parameter user_password of string data-type , The Functionality of check_length() is to check the length of user's password wheather it statisfy the criteria of
 ***PASSWORD LENGTH SHOULD BE OF MINIMUM 12 CHARACTER*** and ***PASSWORD LENGTH SHOULD NOT BE GREATER THAN 20 CHARACTER*** , The function Return boolean value True or False depending criteria, if criteria gets statisfy the function returns True or else return False.
 
 ***6) check_uppercase(user_pass):***
 This Function takes one formal parameter user_password of string data-type, The Functionality of check_uppercase() is to check presence of the upper-case characters [A-Z] in password and also to check the count of upper_case character as password should consist atleast 3 upper-case character. This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False.
-  
+
 ***7) check_lowercase(user-pass):***
-This Function takes one formal parameter user_password of string data-type, The Functionality of check_lowercase() is to check presence of the lower-case characters [a-z] in password and also to check the count of lower_case character as password should consist atleast 3 lower-case character. This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False 
+This Function takes one formal parameter user_password of string data-type, The Functionality of check_lowercase() is to check presence of the lower-case characters [a-z] in password and also to check the count of lower_case character as password should consist atleast 3 lower-case character. This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False
 
 ***8) check_numbers(user_pass):***
 This Function takes one formal parameter user_password of string data-type, The Functionality of check_numbers() is to check presence of the numbers [0-9] in password. This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False  
@@ -113,15 +113,15 @@ This Function takes one formal parameter user_password of string data-type, The 
 
 
 ***11) check_start(user_name):***
-This Function takes one formal parameter user_name of string data-type, The Functionality of check_start() is to chec kwhether the password starts from 1 special character or 2 digit's number 
-This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False 
+This Function takes one formal parameter user_name of string data-type, The Functionality of check_start() is to chec kwhether the password starts from 1 special character or 2 digit's number
+This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False
 
 ***12) check_username(user_name, user_pass):***
-This Function takes two formal parameter user_password and user_nameof string data-type, The Functionality of check_username() is to check whether password contains username in it , if Passowrd consist of username in it this function will return Flase or else it will return True. 
+This Function takes two formal parameter user_password and user_nameof string data-type, The Functionality of check_username() is to check whether password contains username in it , if Passowrd consist of username in it this function will return Flase or else it will return True.
 
 ***13) check_consi(user_pass):***
 This Function takes one formal parameter user_password of string data-type, The Functionality of check_consi() is to check the whether there are 5 same consecutively character or number in password,
-This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False 
+This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False
 
 ***14) check_consi_special(user_pass):***
 This Function takes one formal parameter user_password of string data-type, The The Functionality of check_consi_special() is to check the whether there are 3 same consecutively special character in password, This function has return-type boolean True or False value. if criteria gets statisfy the function returns True or else return False   
@@ -146,5 +146,7 @@ Imported csv module, to parse or for Reading and Writing CSV Files using Python 
 -----------------------------------------------------------------------------------------------------
 **CREATED BY LABHESH LALKA**
 
-**SOFTWARE ENGINEER - CONSULTADD** 
+**SOFTWARE ENGINEER - CONSULTADD INC**
 **TEAM ERUDITE**
+
+** Thank You **
