@@ -297,6 +297,10 @@ def get_username():
     return user_name
 
 
+def sample_function():
+    print("This is Sample Function!")
+
+
 # DRIVER'S CODE
 if __name__ == "__main__":
     print("---------------------------------------------------------------------")
