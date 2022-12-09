@@ -300,6 +300,8 @@ def get_username():
 def sample_function():
     print("This is Sample Function!")
 
+def sample_function_1():
+    print("This is another work done by Labhesh")
 
 # DRIVER'S CODE
 if __name__ == "__main__":
