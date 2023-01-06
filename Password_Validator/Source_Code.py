@@ -297,16 +297,6 @@ def get_username():
     return user_name
 
 
-def sample_function():
-    print("This is Sample Function!")
-
-def sample_function_1():
-    print("This is another work done by Alex")
-    
-
-def sample_function_2():
-    print("This is another work done by Labhesh")
-
 # DRIVER'S CODE
 if __name__ == "__main__":
     print("---------------------------------------------------------------------")
