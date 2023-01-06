@@ -303,6 +303,7 @@ def sample_function():
 
 def sample_function_1(): 
     print("Hello World")
+    print("2nd line of thi functions")
 
 
 
