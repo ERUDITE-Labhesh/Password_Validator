@@ -301,6 +301,11 @@ def sample_function():
     print("This is Second Line")
 
 
+def sample_function_1(): 
+    print("Hello World")
+
+
+
 # DRIVER'S CODE
 if __name__ == "__main__":
     print("---------------------------------------------------------------------")
