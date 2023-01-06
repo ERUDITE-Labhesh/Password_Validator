@@ -296,6 +296,10 @@ def get_username():
     user_name = input("ENTER THE USERNAME: \n >>")
     return user_name
 
+def sample_function(): 
+    print("This is the function wrote by Labhesh")
+    print("This is Second Line")
+
 
 # DRIVER'S CODE
 if __name__ == "__main__":
