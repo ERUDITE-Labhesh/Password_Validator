@@ -326,5 +326,4 @@ if __name__ == "__main__":
     def function_2(num1, num2): # Alexs New Task 
         return num1+num2 
     
-    
-    
+    print("main")
